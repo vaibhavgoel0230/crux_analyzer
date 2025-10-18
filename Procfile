@@ -1,0 +1,1 @@
+web: gunicorn crux_analyzer.wsgi:application
