@@ -5,7 +5,6 @@ A lightweight Django REST API for analyzing website performance using Google's C
 ## Features
 
 - **Real-time CrUX Data**: Fetch live performance metrics from Google's CrUX API
-- **Batch Analysis**: Analyze up to 20 URLs simultaneously
 - **Core Web Vitals**: LCP, CLS, FCP metrics with percentile data
 - **Smart URL Handling**: Automatically adds protocol (https://) if missing
 - **Error Handling**: Comprehensive error reporting for failed requests
@@ -23,7 +22,7 @@ A lightweight Django REST API for analyzing website performance using Google's C
 ## Project Structure
 
 ```
-backend
+crux_analyzer
 ├── analysis/                    # Main Django app
 │   ├── crux_service.py         # CrUX API integration
 │   ├── serializers.py          # Request/response validation
@@ -52,7 +51,7 @@ backend
 
 ```bash
 git clone <repository-url>
-cd backend
+cd crux_analyzer
 ```
 
 ### 2. Create Virtual Environment
